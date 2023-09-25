@@ -160,7 +160,7 @@ function _VoiceRecord(data) {
 function _GetAudioFile(data) {
   //misty.Debug(JSON.stringify(data)); // Check that audio is in Base64 encoding
   let base64 = data.Result.Base64;
-  let apikey = APIKEY;
+  let apikey = APIKEY; // Add your Google STT key here
 
   misty.SendExternalRequest(
     "POST",
